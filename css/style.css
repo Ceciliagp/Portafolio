@@ -1,0 +1,627 @@
+:root{  /**Colores a usar **/
+
+    --blanco:#ffffff;
+    --negro:#212121;
+    --purple:#42012d;
+    --rosa:#f849af;
+    --verde:#b2c504;
+    --azul:#0783ff;
+    --agua:#08617c;
+    --fluor: #0abeaf;
+    --marino: #1b0691;
+    --pardo: #db90d8;
+    --pink: #fd46f7;
+    --gris: #b8b5b8;
+
+
+}
+
+html{ 
+    
+    font-size: 62.5%;
+    box-sizing: border-box;
+    /**scroll-snap-type: y mandatory;   columna busqueda en la y **/
+    font-family: 'Delius Unicase', cursive;
+    background-image: linear-gradient(to top, var (var(--verde))0%, var(--blanco)80%);
+    
+
+
+}
+
+
+ /*******************************************EFECTO SCROLL*********************************************/
+
+.navegacion-principal, .contenido-imagen, .servicios, .formulario,.parrafo-footer{ /*Navegación - el mouse baje por secciones*/
+
+    scroll-snap-align: center; 
+    scroll-snap-stop: always;
+
+}
+
+*,*:before,*:after{
+
+    box-sizing: inherit ; /**Ancho y alto de un elemento: si este incluye relleno y bordes o no**/
+}
+
+body{
+
+    font-size: 16px;
+    font-family: 'Delius Unicase', cursive;
+    background-image: linear-gradient(to top, var (var(--gris)) 0%, var(--gris) 100%);
+    
+}
+
+.contenedor{   /**Centrar contacto**/
+
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+h1{
+    font-size: 3.8rem; /*1rem = 10px*/
+}
+
+h2{
+    font-size: 2.8rem; /*1rem = 10px*/
+}
+
+h3{
+    font-size: 1.8rem; /*1rem = 10px*/
+}
+
+h1,h2,h3{
+    
+    text-align: center;
+
+}
+
+p{
+
+    text-align: center;
+    color: var(--negro);
+}
+
+
+.dato p{
+
+    text-align: justify;
+    color: var(--negro);
+
+}
+
+.no p{
+
+
+    text-align: center;
+    color: var(--negro);
+    line-height: 3;
+}
+
+
+
+/********************************************ESTILO DE BOTONES***********************************************/
+
+.boton{
+
+       background-color: var(--marino); /*boton-fondo*/ 
+       color: var(--blanco); /*color del texto*/ 
+      
+       text-decoration: none; /*quita la linea*/
+       text-transform: uppercase; /*letras mayúsculas*/
+      
+       padding: 1rem 3rem; /**distancia desde el borde de un elemento hasta su contenido**/
+       margin-top: 1rem; 
+       font-size: 20px; /**Define el tamaño de la fuente**/
+       font-weight: bold; /**Grosor o delgadez de los caracteres de texto**/
+       border-radius: .5rem; /*redondeado de las esquinas*/
+       width: 90%;
+       text-align: center; /**Alinea el texto**/
+       border: none;
+
+}
+
+
+@media(min-width:780px){
+
+    .boton{
+
+        width: auto;
+        
+    }
+}
+
+.boton:hover{  /**manito arriba enviar*/
+
+    cursor: pointer;
+}
+
+/**DARK MODE FONDO**/
+
+.dark-modo{
+
+    background-color: var(--negro);
+}
+
+
+.dark-modo img{
+
+    filter: invert(100%)
+}
+
+.dark-modo p{ /**Pone el color del párrafo cuando cambia a dark mode**/
+
+    color: var(--blanco);
+}
+
+.dark-modo h1,h3{
+
+    color:var(--blanco)
+}
+
+.dark-modo h2{
+
+    color: var(--verde);
+}
+
+
+
+/***********************************TÍTULO DEL HEADER********************************************************/
+
+.titulo {   /*header*/
+
+    text-align: center;
+    font-family: 'Milonga', cursive;
+
+}
+
+
+.titulo span{ /**Span dedine un elemento en línea**/
+
+    font-size: 1rem; /* 1rem = 10px*/
+    color: var(--verde);
+    font-size: 2rem; /* 2rem = 20px*/
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+
+.sombra{ /**Sombreado de las esquinas**/
+
+-webkit-box-shadow: -27px -11px 61px -29px rgba(109, 3, 77, 0.98);
+-moz-box-shadow: -27px -11px 61px -29px rgba(92, 2, 92, 0.98);
+box-shadow: -27px -11px 61px -29px rgba(119, 2, 103, 0.98);
+
+background-color: var();
+padding: 2rem;
+border-radius: 1.5rem;
+
+}
+
+/*************************************nav barra de navegación*******************************************/
+
+.nav-bg{
+  
+    background-color: var(--purple); /*Barra de sección*/
+   
+}
+
+.navegacion-principal a{ /**a agrega un enlace**/
+
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--blanco); /**Color del texto dentro de la barra**/
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+}
+
+.navegacion-principal a:hover{
+
+background-color: var(--rosa); /*cuadros para seleccionar*/
+color:var(--negro); /*para las palabras dentro del cuadro de la selección*/
+
+}
+
+.navegacion-principal{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/***************************************HACER RESPONSIVE EL MENÚ******************************************/
+
+@media(min-width:700px){  /*Acoplar en el navegador*/
+
+    .navegacion-principal{
+
+    flex-direction: row;
+
+    }
+}
+
+
+/********************************************INGRESAR IMAGEN**********************************************/
+
+.imagen{
+    
+    background-image: url(../Image/Foto2.jpg); /*salir de la carpeta- background image establece una o más imágenes de fondo para un elemento*/
+    background-repeat: no-repeat; /*no se repita*/
+    background-size: cover;  /*ancho*/
+    height: 400px;
+    background-position: center; /*centra la imagen*/
+    position: relative; /*ajusta el polarizado*/
+    margin-bottom: 0.5rem;
+}
+
+img{
+
+    display: block;
+    margin: auto;
+    position: center;
+}
+
+.contenido-imagen{
+
+
+   position: absolute;
+   background-color: rgba(252, 110, 74, 0.5);
+   background-color: rgba(253, 103, 103, 0.5);
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center; 
+
+}
+
+.contenido-imagen h2, .contenido-imagen p{
+
+    color: var(--blanco); /**Texto sobre la imagen**/
+}
+
+
+
+/**************************************MAIN SERVICIOS DISPLAY GRID***************************************/
+
+@media(min-width: 780px){
+
+.servicios{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr); /*primer valor columna, */
+
+   }
+}
+
+
+
+
+
+/**********************************************ICONOS***************************************************/
+
+.servicio{
+
+    display:flex; /*filas*/
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.servicio .iconos{
+
+    height: 20rem;
+    width: 20rem;
+    background-color: var(--pardo); /**Circulo de las figuras**/
+    border-radius: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+.servicio h3{
+
+    color: var(--verde); /**Texto arriba del circulo de los iconos**/
+}
+
+
+.servicio p{
+
+    line-height: 3;
+    
+}
+
+
+.descrpcion p{
+
+
+    text-transform: uppercase;
+
+  line-height: 4.5;
+
+  
+  font-family: 'Hachi Maru Pop', cursive;
+
+
+}
+
+.descrpcion{
+
+    display:flex; /*filas*/
+    flex-direction: column;
+    align-items: center;
+}
+
+.dato p{
+
+    text-transform: uppercase;
+
+    line-height: 1.5;
+  
+    
+    font-family: 'Hachi Maru Pop', cursive;
+  
+}
+
+/***********************************************FORMULARIO***********************************************/
+
+.formulario{
+
+  background-color: var(--pardo); /**fondo del formulario***/
+  width: min(60%, 100%); /**ancho**/
+  margin: 0 auto;/**Establece un margen para cuatro lados**/
+  padding: 2rem;
+  border-radius: 1rem;/**Redondea las esquinas del borde exterior de un elemento**/
+}
+
+.formulario fieldset{
+
+    border: none;
+    line-height: 3rem;
+}
+
+.formulario legend{   /**Instrucciones del formulario**/
+
+    text-align: center;
+    font-size:2rem;
+    text-transform: uppercase; /**Palabra clave que fuerza a todos los caracteres a ser convertdios a mayúsculas**/
+    font-weight: 700;
+    color: var(--negro); /**Texto dentro del formulario**/
+    line-height: 8rem;
+}
+
+.formulario input{
+
+    display: flex; /**Se comporta como elemento de bloque y establece su contenido de acuerdo con el modelo flexbox**/
+    flex-direction: column; /**Pone en columna a los elementos**/
+    align-items: center;/**Centra los elementos de una caja**/
+    justify-content: center; /**Distribuye el espacio entre los elementos de manera uniforme**/
+    line-height: 2rem; /**Interlineado del texto**/
+
+}
+
+/**************************************CAMPOS PARA INGRESAR LOS DATOS************************************/
+
+.campo{
+
+    margin-bottom: 1rem; /**Etsbalece el espacio requerido en la parte inferior de un elemento**/
+}
+
+.campo label{
+
+    color: var(--purple);
+    font-size: 2rem;
+    font-weight: bold;    /*nth-child* 3 y 4*/
+    margin-bottom:.5rem;
+    display: block; /**Genera un cuadro de elemento de bloque**/
+    
+}
+
+.campo textarea{
+
+    height: 15rem; /**Altura de un elemento**/
+}
+
+.input-campo{
+
+   width: 100%; /**Anchura del área de contenido de un elemento**/
+   border: none; /**No muestra ningún borde**/
+   border-radius:5rem; /**Redondea los bordes de las cajas**/
+   padding: 1.5rem;
+    
+}
+
+@media (min-width:780px){
+
+      .contenedor-campos{
+
+          display: grid; /**El elemento en sí y su contenido se establecen de acuerdo con el modelo de cuadrícula**/
+          grid-template-columns: repeat(2, 1fr); /**Define el nombre de las líneas y las funciones de tamaño de línea grid colums**/
+          grid-template-rows: auto auto 20rem; /**Define el nombre de las líneas y las funciones de tamaño de línea de grid rows**/
+          column-gap: 1rem; /*separación de las columnas*/
+          
+      }
+
+}
+
+
+.campo:nth-child(3),  /**Se divide en fracciones el formulario, hace vizualizarse en columnas**/
+.campo:nth-child(4){
+
+    grid-column: 1/3; /**Específica el tamaño y la ubicación de un elemento de cuadrícula dentro de una columna, lo divide en tramos**/
+}
+
+.boton:hover{
+
+    cursor: pointer;
+    cursor: hand;
+}
+
+
+
+/*modificar esta página, crear una página en cada sección del navegador, un boton leer más, más opciones*/
+
+/**MENÚ HAMBURGUESA**/
+
+
+
+
+
+
+@media(min-width:780px){
+    .navegacion-principal{
+       
+        flex-direction: row; 
+    }
+}
+
+@media (min-width:780px){
+    .navegacion-principal{
+        
+        flex-direction: row;
+    }
+    .mobile-menu{
+        display: none;
+
+    }
+
+}
+
+@media(max-width:780px){
+    .navegacion-principal{
+        display: none;
+    }
+    .mobile-menu{ 
+        text-align: center;
+    }
+    .mobile-menu img{
+        width: 5rem; /*PARA REDUCIR*/
+    }
+}
+
+@media(max-width:780px){
+    .mostrar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media(min-width:780px){
+    .navegacion-principal{
+       
+        flex-direction: row;
+    }
+
+}
+
+.mobile-menu:hover{
+
+    cursor: pointer;
+    cursor: hand;
+}
+
+
+/**DAFK MODE**/
+
+
+
+.derecha{
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-top: 1rem;
+
+}
+
+
+.dark-mode{
+
+    width: 3rem;
+}
+
+.dark-mode:hover{
+
+    cursor: pointer;
+    cursor: hand;
+}
+
+
+
+.enlace {
+    display:inline;
+    border:1px;
+    padding: 1px;
+    margin: 2px;
+    text-decoration:underline;
+    background:none;
+    color:#0202be;
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 1em;
+    line-height:1em;
+  }
+  
+  .enlace:hover {
+    text-decoration:none;
+    color:#0f0141;
+    cursor:pointer;
+  }
+
+
+  /*****/
+
+  /*!
+ * Estilos para caja de enlaces relacionados La Gaceta */
+ .caja-contenedora {
+    width: 232px;
+   float: right;
+   border: 1px solid #d602cc;
+   margin: 5px 0 15px 25px;
+   background: #e403d8;
+   border-top-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   color: #fff;
+}
+.caja-de-texto {  
+     font-family: arial;
+   font-size: 17px;
+   line-height: 18px;
+   margin: 1;
+   padding: 10px 10px 10px 10px;
+   font-weight: bold;
+}
+
+.caja-de-texto a {
+   color:#FFF !important;
+ text-decoration:none;
+}
+
+
+.facebook{
+
+    height: 2rem;
+    width: 2rem;
+}
+
+.instagram{
+
+    height: 2rem;
+    width: 2rem;
+}
+
+
+.twitter{
+
+    height: 2rem;
+    width: 2rem;
+    
+}

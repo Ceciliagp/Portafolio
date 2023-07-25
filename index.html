@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head><!--Dentro se escribe información sobre el documento-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Cecilia</title>
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <!--dar más formato para cualquier navegador-->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!--google fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Delius+Unicase:wght@400;700&family=Hachi+Maru+Pop&family=Lobster&family=Milonga&family=Permanent+Marker&family=Rubik+Maze&display=swap"
+        rel="stylesheet">
+
+
+
+    <!--PARA DAR PERFORMACE Y SE CARGUE ANTES EN TODAS LAS PAGINAS QUE SE USARAN-->
+    <link rel="preload" href="css/style.css" as="style">
+    <!--PARA LIGAR EL ARCHIVO EXTERNO  CSS EN TODAS LAS PAGINAS QUE SE USARAN-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body><!-- INICIO DEL ENCABEZADO DEL SITIO-->
+
+
+    <div class="derecha contenedor">
+
+        <img class="dark-mode" src="Image/dark-mode.svg" alt="Icono dark">
+
+    <header>
+       
+        <h1 class="titulo"> CECILIA GABRIELA PACHECO CANUL <span> =Estudiante de ingeniería= </span></h1>
+
+    </header> <!-- FIN... DEL ENCABEZADO DEL SITIO-->
+
+    </div>
+
+    <!--INICIO DEL ÁREA DE NAVEGACIÓN O MENUS-->
+    <div class="nav-bg contenedor">
+
+        <div class="mobile-menu">
+
+            <img src="Image/barras.svg" alt="icono Menu Hamburguesa">
+
+        </div>
+
+
+        <nav class="navegacion-principal">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="contacto.html">Contacto</a>
+            
+        </nav><!--FIN... DEL ÁREA DE NAVEGACIÓN O MENUS-->
+    </div>
+
+
+
+
+    <!--<img src="img/Foto1.jpg" alt="Servicios">  *se agrega por CSS*/-->
+
+
+    <!-- para buscar iconos svg o vectores lo soportan todos los navegadores se usa https://tablericons.com/
+      INICIO SECCION DE IMAGEN  Y DATOS DE  UBICACION Y OBJETIVO-->
+    <section class="imagen contenedor">
+        <div class="contenido-imagen">
+
+            <h2>Programación de aplicaciones Web</h2>
+
+
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg&quot; class=" icon icon-tabler icon-tabler-map-pins" width="44"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10.828 9.828a4 4 0 1 0 -5.656 0l2.828 2.829l2.828 -2.829z" />
+                    <line x1="8" y1="7" x2="8" y2="7.01" />
+                    <path d="M18.828 17.828a4 4 0 1 0 -5.656 0l2.828 2.829l2.828 -2.829z" />
+                    <line x1="16" y1="15" x2="16" y2="15.01" />
+                </svg>
+
+                San Francisco de Campeche, Campeche, México
+            </p>
+
+            <a class="boton" href="redes.html">Contactar</a>
+
+        </div>
+
+    </section>
+    <!--FIN... SECCION DE IMAGEN  Y DATOS DE  UBICACION Y OBJETIVO-->
+
+    <!-- INICIO DE LA INFORMACION PRINCIPAL main MIS SERVICOS-->
+
+    <main class="contenedor sombra">
+
+        <h2>MIS SERVICIOS</h2>
+
+        <div class="servicios"><!--Para no confundirnos-->
+
+            <section class="servicio"><!--clase padre-->
+
+                <h3>PROGRAMACIÓN</h3>
+
+                <div class="iconos">
+
+                    <svg xmlns="http://www.w3.org/2000/svg&quot; class=" icon icon-tabler
+                        icon-tabler-brand-visual-studio" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 8l2 -1l10 13l4 -2v-12l-4 -2l-10 13l-2 -1z" />
+                    </svg>
+                </div>
+
+                <p> Desarrollador de software. </p>
+
+            </section><!--define un área del documento-->
+
+            <section class="servicio"><!--clase padre-->
+
+                <h3> BASES DE DATOS </h3>
+
+                <div class="iconos">
+
+                    <svg xmlns="http://www.w3.org/2000/svg&quot; class=" icon icon-tabler icon-tabler-database"
+                        width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <ellipse cx="12" cy="6" rx="8" ry="3"></ellipse>
+                        <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+                        <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+
+                    </svg>
+
+                </div>
+
+
+                <p>Diseño, implementación, conocimiento de MySql y php. </p>
+
+            </section>
+
+            <section class="servicio"><!--clase padre-->
+
+                <h3>MATEMÁTICAS</h3>
+
+                <div class="iconos">
+
+                    <svg xmlns="http://www.w3.org/2000/svg&quot; class=" icon icon-tabler icon-tabler-math-function"
+                        width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M14 10h1c1 0 1 1 2.016 3.527c.984 2.473 .984 3.473 1.984 3.473h1" />
+                        <path d="M13 17c1.5 0 3 -2 4 -3.5s2.5 -3.5 4 -3.5" />
+                        <path d="M3 19c0 1.5 .5 2 2 2s2 -4 3 -9s1.5 -9 3 -9s2 .5 2 2" />
+                        <line x1="5" y1="12" x2="11" y2="12" />
+
+                    </svg>
+
+                </div><!--define una sección del documento-->
+
+                <p>Capacidad de resolver problemas matemáticos.</p>
+
+           
+
+            </section>
+
+                <section class="servicio"><!--clase padre-->
+
+                    <h3>BLENDER</h3>
+
+                <div class="iconos">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lego" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="9.5" y1="11" x2="9.51" y2="11" />
+                        <line x1="14.5" y1="11" x2="14.51" y2="11" />
+                        <path d="M9.5 15a3.5 3.5 0 0 0 5 0" />
+                        <path d="M7 5h1v-2h8v2h1a3 3 0 0 1 3 3v9a3 3 0 0 1 -3 3v1h-10v-1a3 3 0 0 1 -3 -3v-9a3 3 0 0 1 3 -3" />
+                      </svg><!--contenedor para gráficos-->
+                </div>
+
+        <p>Conocimiento en modelado de figuras, texturas, texto e iluminación.</p>
+
+        </section>
+
+   
+
+   <!-- AQUÍ COMIENZA LA CAJA -->
+<link rel="stylesheet" type="text/css" href="http://www.gitpaper.com/linksrelacionados/style-2.css">
+
+<div class="caja-contenedora">
+  <!-- AQUÍ VA LA URL DE LA IMAGEN -->
+  <!--<img width="232" height="130" src="">
+  <br>-->
+  
+  <div class="caja-de-texto">  
+  <!-- LINK Y EL TITULO DE NOTA 1 -->  
+  <a href="mas.html">Leer más</a>
+  <br><br>
+  </div>
+</div>
+<!-- AQUÍ TERMINA LA CAJA -->
+</div><!-- AQUÍ TERMINA EL CONTENEDOR -->
+
+    </main><!--FIN... DE LA INFORMACIÓN PRINCIPAL main MIS SERVICIOS-->
+
+    <footer class="parrafo-footer"><!--define el pie de página de un documento-->
+
+        <p>Los derechos reservados &copy; 2022, Cecilia</p> 
+
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
